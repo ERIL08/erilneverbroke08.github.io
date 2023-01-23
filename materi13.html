@@ -1,0 +1,64 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+    <div class="w3-display-container">
+        <img src="LIVERPOOL.jpg" alt="Lights" style="width:100%" height="50%">
+        <div class="w3-panel w3-red w3-padding w3-display-topleft">LIVERPOOL</div>
+        <div class="w3-panel w3-red w3-padding w3-display-bottomleft">YOU NEVER WALK ALONE</div>
+
+</div>
+<div class="w3-bar w3-red">
+ <button class="w3-bar-item w3-button" onclick="openKota('MO.SALAH')">MO.SALAH</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('HENDERSON')">HENDERSON</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('TAA')">TAA</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('TSHIMIKAS')">TSHIMIKAS</button>
+ <div class="w3-dropdown-hover">
+    <button class="w3-button">YNWA</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+        <button class="w3-bar-item w3-button" onclick="openKota('MO.SALAH')">MO.SALAH</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('HENDERSON')">HENDERSON</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('TAA')">TAA</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('TSHIMIKAS')">TSHIMIKAS</button>
+    </div>
+  </div>
+</div>
+</body>
+<div id="MO.SALAH" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>MO SALAH</h2>
+ <p>Kelahiran: 15 Juni 1992 (usia 30 tahun), Nagrig, Mesir</p>
+ <img src="MOSALAH.jpg" alt="Lights" style="width:70%" height="100%" class="w3-border w3-padding ">
+</p>
+</div>
+<div id="HENDERSON" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>HENDERSON</h2>
+ <p>Kelahiran: 17 Juni 1990 (usia 32 tahun), Sunderland, Britania Raya
+  Tinggi: 1,82 m
+  <img src="HENDERSON.jpg" alt="light" style="width: 70%" height="100%" class="w3-border w3-padding">
+</p>
+</div>
+<div id="TAA" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>ALEXANDER ARNOLD</h2>
+ <p>Kelahiran: 7 Oktober 1998 (usia 24 tahun), West Derby, Liverpool, Britania Raya
+  Tinggi: 1,75 m</p>
+  <img src="TAA.webp" alt="light" style="width: 70%" height="100%" class="w3-border w3-padding">
+</p>
+</div>
+<div id="TSHIMIKAS" class="w3-container kota w3-animate-bottom" style="display:none">
+    <h2>TSIMIKAS</h2>
+    <p>Kelahiran: 12 Mei 1996 (usia 26 tahun), Tesalonika, Yunani</p>
+      <img src="TS.jpeg">
+   </p>
+<script>
+function openKota(namakota) {
+   var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
